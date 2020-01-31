@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-        const contentDiv = document.getElementById("content-div");
-        const button = document.getElementById("button").addEventListener("click", buttonCallback);
-
-        function buttonCallback() {
-            console.log('hi there');
-        };
-    </script>
 </head>
 <body>
     <div id="content-div"></div>
     <button id="button">Click me!</button>
+    <script>
+        const contentDiv = document.getElementById("content-div");
+        const button = document.getElementById("button");
+        const listener = button.addEventListener("click", buttonCallback);
+    
+        function buttonCallback() {
+            console.log('hi there');
+        };
+    </script>
 </body>
 </html>
